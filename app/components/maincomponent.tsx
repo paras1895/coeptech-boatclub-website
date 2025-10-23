@@ -2,7 +2,7 @@ export default function MainComponent() {
   return (
     <>
       <main className="w-[70vw] pr-[5vw]">
-        <img src="3.jpg" alt="Boat Club" className="w-[500px] h-[281px]" />
+        <img src="collage.png" alt="Boat Club" className="w-full" />
         <p className="pt-[20px]">
           COEP is proud to have a Boat Club, which is one of its kind in the
           country. Situated on the banks of Mula River, this club was
@@ -36,11 +36,6 @@ export default function MainComponent() {
           </a>
           <br />
           <br /> Contact Us: Boat Club Office : +91 20-25507179
-          <br />
-          <br /> Om Thange, Dr. V. K. Haribhakta Dr. S. M. Nawghare<br /> General
-          Secretary, Vice President of Boat Club Regatta InCharge<br /> COEP Boat
-          Club. Contact : <a className="text-blue-500 hover:underline cursor-pointer">vkh.mech@coep.ac.in</a> Contact : <a className="text-blue-500 hover:underline cursor-pointer">smn.civil@coep.ac.in</a><br />
-          Contact - 9359818082<br /><br />
         </p>
       </main>
     </>

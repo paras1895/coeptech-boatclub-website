@@ -20,13 +20,13 @@ export default function Navsmall() {
           fontFamily:
             "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
         }}
-        className="text-[14px] cursor-pointer w-[21vw]"
+        className="text-[14px] cursor-pointer w-[20vw] pl-[25px]"
       >
         <ul>
           {arr1.map((item) => (
             <li
               key={item}
-              className="border-t-[1px] border-r-[1px] border-l-[1px] border-gray-300 p-[10px]"
+              className="border-t-[1px] border-r-[1px] border-l-[1px] border-gray-300 py-[10px] pl-[10px] pr-[40px]"
             >
               {item}
             </li>
