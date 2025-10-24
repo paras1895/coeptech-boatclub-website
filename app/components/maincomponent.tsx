@@ -21,8 +21,7 @@ export default function MainComponent() {
           court, thus providing students of this college with best athletic
           endeavors. It hosts a canteen as well. Membership of the Boat club is
           mandatory to all the under graduate and postgraduate students seeking
-          admission in this institute. Moreover, facilities of the boat club are
-          extended to every Alumni of this College.
+          admission in this institute.
           <br />
           <br />
           The Boatclub, as it is known, is one of the favourite spot for most
