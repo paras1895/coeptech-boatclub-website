@@ -1,9 +1,9 @@
 export default function MainComponent() {
   return (
     <>
-      <main className="w-[70vw] pr-[5vw]">
+      <main className="w-full text-[13px] text-justify sm:text-[16px] px-[10px] sm:px-[0px] sm:w-[70vw] sm:pr-[5vw]">
         <img src="collage.png" alt="Boat Club" className="w-full" />
-        <p className="pt-[20px]">
+        <p className="pt-[10px] sm:pt-[20px]">
           COEP is proud to have a Boat Club, which is one of its kind in the
           country. Situated on the banks of Mula River, this club was
           established in the year 1928. The club owns about 70 trainee and

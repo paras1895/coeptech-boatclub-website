@@ -15,7 +15,7 @@ export default function Navright() {
 
   return (
     <>
-      <div className="w-full flex h-[4vh] pt-[10px] text-[2vh] font-semibold">
+      <div className="w-full sm:flex h-[4vh] pt-[10px] text-[2vh] hidden font-semibold">
         {arr.map((item) => (
           <div key={item} className="text-white border-r-[1px] px-[0.7vw]">
             {item}

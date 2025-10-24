@@ -1,4 +1,4 @@
-export default function Navsmall() {
+export default function MobileNavBottom() {
   const arr1 = [
     "Aarya Raas",
     "Abhijaat Newsletter",
@@ -12,7 +12,6 @@ export default function Navsmall() {
     "Civil Services Aspirant's Club",
     "COEP ACM",
   ];
-
   return (
     <>
       <div
@@ -20,7 +19,7 @@ export default function Navsmall() {
           fontFamily:
             "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
         }}
-        className="text-[14px] cursor-pointer w-[20vw] pl-[25px] hidden sm:block"
+        className="text-[14px] cursor-pointer w-full px-[10px] sm:hidden"
       >
         <ul>
           {arr1.map((item) => (

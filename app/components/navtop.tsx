@@ -10,7 +10,7 @@ const NavTop: React.FC<NavTopProps> = ({ name }) => {
     <>
       <div
         style={{ fontFamily: "Roboto, Sans-serif" }}
-        className="font-medium text-white text-[12px] pl-[12px] pr-[12px]"
+        className="font-medium text-white text-[8px] sm:text-[12px] sm:pl-[12px] sm:pr-[12px]"
       >
         {name}
       </div>

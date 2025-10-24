@@ -67,18 +67,18 @@ const facultyMembers: FacultyMember[] = [
 const FacultySection = () => {
   return (
     <section id="faculty" className="w-full pb-[20px]">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 mb-12">
+      <div className="max-w-6xl mx-auto px-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 mt-5 mb-5 sm:mb-12">
           Our Staff
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {facultyMembers.map((faculty, index) => (
             <div
               key={index}
               className="border-[1px] border-gray-300 bg-white rounded-xl shadow-md hover:shadow-xl cursor-pointer transition-shadow duration-300 p-6 flex flex-col items-center"
             >
-              <div className="relative w-45 h-45 mb-4">
+              <div className="relative w-30 h-30 mb-4">
                 <Image
                   src={faculty.image}
                   alt="img"
@@ -92,7 +92,7 @@ const FacultySection = () => {
               <p className="text-gray-600 mb-2">{faculty.designation}</p>
               <a
                 href={`mailto:${faculty.email}`}
-                className="text-blue-600 hover:underline break-words"
+                className="text-blue-600 hover:underline break-words text-[14px]"
               >
                 {faculty.email}
               </a>
