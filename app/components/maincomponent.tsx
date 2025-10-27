@@ -1,8 +1,11 @@
+import Gallery from "./Image";
+
 export default function MainComponent() {
   return (
     <>
       <main className="w-full text-[13px] text-justify sm:text-[16px] px-[10px] sm:px-[0px] sm:w-[70vw] sm:pr-[5vw]">
-        <img src="collage.png" alt="Boat Club" className="w-full" />
+        {/* <img src="collage.png" alt="Boat Club" className="w-full" /> */}
+        <Gallery />
         <p className="pt-[10px] sm:pt-[20px]">
           COEP is proud to have a Boat Club, which is one of its kind in the
           country. Situated on the banks of Mula River, this club was
@@ -28,13 +31,33 @@ export default function MainComponent() {
           people in college. The riverside ambience offers a majestic view of
           the Mula River. The Boatclub has become synonymous with COEP for every
           COEPian. <br />
+    <br /> Contact Us: Boat Club Office : +91 20-25507179
           <br />
           For more information visit our website :<br /><br />
-          <a href="#" className="text-blue-600">
-            https://coepboatclub.com
-          </a>
+    {/* <a
+      href="https://boatclub.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+    >
+      Visit Boat Club
+    </a> */}
+    {/* return ( */}
+  {/* <div className="flex justify-center mt-10"> */}
+    <a
+      href="https://www.coepboatclub.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block border-2 border-blue-500 text-blue-600 px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-500 hover:text-white transition-all duration-300"
+    >
+      Explore Boat Club
+    </a>
+  {/* </div> */}
+{/* ); */}
+
+
+
           <br />
-          <br /> Contact Us: Boat Club Office : +91 20-25507179
         </p>
       </main>
     </>
