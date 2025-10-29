@@ -77,6 +77,9 @@ const facultyMembers: FacultyMember[] = [
     image: "/f11.png",
     phone: "+91 77098 68683",
   },
+];
+
+const supportingStaff: FacultyMember[] = [
   {
     name: "Raju Mama",
     designation: "Boatman",
@@ -85,7 +88,7 @@ const facultyMembers: FacultyMember[] = [
   },
   {
     name: "Santosh Mama",
-    designation: "Kayaking",
+    designation: "Boatman",
     email: "",
     image: "/s3.jpg",
   },
@@ -100,52 +103,98 @@ const facultyMembers: FacultyMember[] = [
 const FacultySection = () => {
   return (
     <>
-      <section id="faculty" className="w-full pb-20">
-        <div className="max-w-6xl mx-auto px-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 mt-5 mb-12">
-            Our Staff
-          </h2>
+    <section id="faculty" className="w-full pb-20">
+      <div className="max-w-6xl mx-auto px-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 mt-5 mb-12">
+          Our Staff
+        </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-            {facultyMembers.map((faculty, index) => (
-              <div
-                key={index}
-                className="border border-gray-300 bg-white rounded-xl shadow-md hover:shadow-xl cursor-pointer transition-shadow duration-300 p-6 flex flex-col items-center h-full"
-              >
-                <div className="relative w-32 h-32 mb-4">
-                  <Image
-                    src={faculty.image}
-                    alt={faculty.name}
-                    fill
-                    className="object-cover rounded-full"
-                  />
-                </div>
-                <div className="flex flex-col flex-grow items-center justify-between text-center">
-                  <div>
-                    <h3 className="text-xl font-semibold text-blue-900">
-                      {faculty.name}
-                    </h3>
-                    <p className="text-gray-600 mb-2">{faculty.designation}</p>
-                    <a
-                      href={`mailto:${faculty.email}`}
-                      className="text-blue-600 hover:underline break-words text-sm"
-                    >
-                      {faculty.email}
-                    </a>
-                  </div>
-
-                  {faculty.phone && (
-                    <div className="flex items-center gap-2 pt-4 text-xs">
-                      <img src="phone.png" alt="phone icon" className="h-4" />
-                      {faculty.phone}
-                    </div>
-                  )}
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          {facultyMembers.map((faculty, index) => (
+            <div
+              key={index}
+              className="border border-gray-300 bg-white rounded-xl shadow-md hover:shadow-xl cursor-pointer transition-shadow duration-300 p-6 flex flex-col items-center h-full"
+            >
+              <div className="relative w-32 h-32 mb-4">
+                <Image
+                  src={faculty.image}
+                  alt={faculty.name}
+                  fill
+                  className="object-cover rounded-full"
+                />
               </div>
-            ))}
-          </div>
+              <div className="flex flex-col flex-grow items-center justify-between text-center">
+                <div>
+                  <h3 className="text-xl font-semibold text-blue-900">
+                    {faculty.name}
+                  </h3>
+                  <p className="text-gray-600 mb-2">{faculty.designation}</p>
+                  <a
+                    href={`mailto:${faculty.email}`}
+                    className="text-blue-600 hover:underline break-words text-sm"
+                  >
+                    {faculty.email}
+                  </a>
+                </div>
+
+                {faculty.phone && (
+                  <div className="flex items-center gap-2 pt-4 text-xs">
+                    <img src="phone.png" alt="phone icon" className="h-4" />
+                    {faculty.phone}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
+    <section id="faculty" className="w-full pb-20">
+      <div className="max-w-6xl mx-auto px-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 mb-12">
+          Supporting Staff
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          {supportingStaff.map((faculty, index) => (
+            <div
+              key={index}
+              className="border border-gray-300 bg-white rounded-xl shadow-md hover:shadow-xl cursor-pointer transition-shadow duration-300 p-6 flex flex-col items-center h-full"
+            >
+              <div className="relative w-32 h-32 mb-4">
+                <Image
+                  src={faculty.image}
+                  alt={faculty.name}
+                  fill
+                  className="object-cover rounded-full"
+                />
+              </div>
+              <div className="flex flex-col flex-grow items-center justify-between text-center">
+                <div>
+                  <h3 className="text-xl font-semibold text-blue-900">
+                    {faculty.name}
+                  </h3>
+                  <p className="text-gray-600 mb-2">{faculty.designation}</p>
+                  <a
+                    href={`mailto:${faculty.email}`}
+                    className="text-blue-600 hover:underline break-words text-sm"
+                  >
+                    {faculty.email}
+                  </a>
+                </div>
+
+                {faculty.phone && (
+                  <div className="flex items-center gap-2 pt-4 text-xs">
+                    <img src="phone.png" alt="phone icon" className="h-4" />
+                    {faculty.phone}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
     </>
   );
 };
